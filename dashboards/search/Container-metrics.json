@@ -1,0 +1,22 @@
+{
+  "columns": [
+    "shipper",
+    "cpu.user_p",
+    "cpu.steal",
+    "load.load1",
+    "load.load5",
+    "mem.used",
+    "mem.used_p"
+  ],
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{\"index\":\"[dockerbeat-]YYYY.MM.DD\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"type:container\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"fragment_size\":2147483647},\"filter\":[]}"
+  },
+  "hits": 0,
+  "sort": [
+    "timestamp",
+    "desc"
+  ],
+  "title": "Container metrics",
+  "description": "",
+  "version": 1
+}
