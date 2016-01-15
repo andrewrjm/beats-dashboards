@@ -10,13 +10,20 @@ Installation
 To load the dashboards, execute the script pointing to the Elasticsearch HTTP
 URL:
 
-        ./load.sh http://localhost:9200
+        # Unix
+        ./load.sh -url "http://localhost:9200"
 
+        # Windows
+        .\load.ps1 -url "http://localhost:9200"
 
 If you want to use HTTP authentication for Elasticsearch, you can specify the
 credentials as a second parameter:
 
-        ./load.sh http://localhost:9200 'admin:password'
+        # Unix
+        ./load.sh -url "http://localhost:9200" -user "admin:secret"
+
+        # Windows
+        .\load.ps1 -url "http://localhost:9200" -user "admin:secret"
 
 Technical details
 -----------------
@@ -31,3 +38,4 @@ Screenshots
   ![Packetbeat Statistics](/screenshots/Packetbeat-statistics.png)
   ![MySql performance](/screenshots/MySql-performance.png)
   ![Thrift performance](/screenshots/Thrift-performance.png)
+  ![Windows Event Log Statistics](/screenshots/winlogbeat-dashboard.png)
