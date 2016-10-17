@@ -7,7 +7,7 @@
 
 
 # The default value of the variable. Initialize your own variables here
-ELASTICSEARCH=http://localhost:9200
+ELASTICSEARCH=${ELASTICSEARCH_URL:=http://localhost:9200}
 CURL=curl
 KIBANA_INDEX=".kibana"
 
